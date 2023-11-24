@@ -1,0 +1,97 @@
+{
+    "name": "yiisoft/yii2-app-advanced",
+    "description": "Yii 2 Advanced Project Template",
+    "keywords": ["yii2", "framework", "advanced", "project template"],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "symfony/dotenv": "^5.0.5",
+        "yiisoft/yii2": "~2.0.6",
+        "yiisoft/yii2-bootstrap4": "*",
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "dmstr/yii2-adminlte-asset": "^2.1",
+        "la-haute-societe/yii2-save-relations-behavior": "^1.7",
+        "mihaildev/yii2-ckeditor": "*",
+        "2amigos/yii2-date-picker-widget": "~1.0",
+        "kartik-v/yii2-widget-select2": "dev-master",
+        "costa-rico/yii2-images": "^1.0",
+        "kartik-v/yii2-widget-fileinput": "dev-master",
+        "newerton/yii2-fancybox-3": "dev-master",
+        "kartik-v/yii2-sortable": "@dev",
+        "loveorigami/yii2-modal-ajax": "@dev",
+        "yiisoft/yii2-jui": "^2.0",
+        "yii2-starter-kit/yii2-file-kit": "^2.0",
+        "2amigos/yii2-selectize-widget": "~1.0",
+        "kartik-v/yii2-grid": "dev-master",
+        "unclead/yii2-multiple-input": "~2.0",
+        "trntv/yii2-datetime-widget": "^1.1",
+        "codemix/yii2-localeurls": "^1.7",
+        "dektrium/yii2-user": "^0.9.14",
+        "2amigos/yii2-ckeditor-widget": "^2.1",
+        "dektrium/yii2-rbac": "1.0.0-alpha@dev",
+        "google/apiclient": "^2.0",
+        "demi/seo": "~1.0",
+        "zyx/zyx-phpmailer": "@stable",
+        "geoip2/geoip2": "~2.0",
+        "stichoza/google-translate-php": "^4.0",
+        "zendframework/zendsearch": "dev-master",
+        "zendframework/zend-stdlib": "2.3.1 as 2.0.0rc5",
+        "himiklab/yii2-search-component-v2": "*",
+        "yiisoft/yii2-sphinx": "^2.0",
+        "kartik-v/yii2-widget-depdrop": "dev-master",
+        "himiklab/yii2-recaptcha-widget": "*",
+        "yii2tech/csv-grid": "^1.0",
+        "kartik-v/yii2-editable": "dev-master",
+        "himiklab/yii2-sitemap-module": "*",
+        "phpoffice/phpspreadsheet": "^1.10",
+        "mihaildev/yii2-elfinder": "*",
+        "kartik-v/yii2-money": "dev-master",
+        "guzzlehttp/guzzle": "*",
+        "kartik-v/yii2-widget-switchinput": "dev-master",
+        "yiisoft/yii2-queue": "^2.3",
+        "sendpulse/rest-api": "^1.0"
+    },
+    "require-dev": {
+        "bizley/migration": "~3.0.0",
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+        "codeception/base": "^2.2.3",
+        "codeception/verify": "~0.3.1"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "exclude-from-classmap": ["vendor\\abeautifulsite\\simpleimage\\src\\abeautifulsite\\SimpleImage.php"],
+        "files": ["common/overrides/SimpleImage.php"]
+    }
+}
